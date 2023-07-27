@@ -49,7 +49,7 @@ const Box = () => {
         <i className="fab fa-tumblr"></i>
       </a>
       <button id="new-quote-button" onClick={handleClick}>
-        New quote
+        Nueva Frase
       </button>
     </div>
   );
