@@ -46,6 +46,13 @@ body {
     color: white;
     width: 40px;
     background-color: $main-color;
+    transition: opacity ease-in-out 0.1s;
+  }
+  #tweet-quote:hover,
+  #tumblr-quote:hover,
+  #new-quote-button:hover {
+    transition: opacity ease-in-out 0.1s;
+    opacity: 80%;
   }
   #new-quote-button {
     float: right;
