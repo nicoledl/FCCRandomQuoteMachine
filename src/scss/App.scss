@@ -1,0 +1,72 @@
+$main-color: #1f78b4;
+
+body {
+  background-color: #1f78b4;
+  transition: background-color ease-in-out 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: $main-color;
+}
+
+#quote-box {
+  width: 600px;
+  padding: 40px 50px 80px;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  animation-duration: 2s;
+  animation-name: slidein;
+  #text {
+    text-align: center;
+    font-size: 2.1rem;
+    margin: 0;
+    color: $main-color;
+    line-height: normal;
+    transform: scaleY(110%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #author {
+    margin: 15px 0 40px 0;
+    text-align: end;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+  #tweet-quote,
+  #tumblr-quote {
+    float: left;
+    padding: 0px;
+    padding-top: 6px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 5px;
+    height: 38px;
+    border-radius: 4px;
+    color: white;
+    width: 40px;
+    background-color: $main-color;
+  }
+  #new-quote-button {
+    float: right;
+    text-align: center;
+    padding: 0 15px 0 15px;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    width: auto;
+    background-color: $main-color;
+    cursor: pointer;
+  }
+
+  @keyframes slidein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 100%;
+    }
+  }
+}
