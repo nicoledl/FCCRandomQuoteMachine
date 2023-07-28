@@ -26,7 +26,7 @@ const Box = () => {
   };
 
   return (
-    <div id="quote-box" className="container-sm">
+    <div id="quote-box">
       <p id="text">
         <i className="fas fa-quote-left fs-3"></i>{" "}
         {frasesConAutores[number].frase}
@@ -48,7 +48,7 @@ const Box = () => {
       >
         <i className="fab fa-tumblr"></i>
       </a>
-      <button id="new-quote-button" onClick={handleClick}>
+      <button id="new-quote" onClick={handleClick}>
         Nueva Frase
       </button>
     </div>

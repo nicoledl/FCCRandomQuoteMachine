@@ -22,7 +22,7 @@ function applyRandomColor(color) {
   $("body").css("background-color", color);
   $("#quote-box #text, #quote-box #author").css("color", color);
   $(
-    "#quote-box #tweet-quote, #quote-box #tumblr-quote, #quote-box #new-quote-button"
+    "#quote-box #tweet-quote, #quote-box #tumblr-quote, #quote-box #new-quote"
   ).css("background-color", color);
 }
 
@@ -32,7 +32,7 @@ export function generateRandomColor() {
   applyRandomColor(randomColorValue);
 
   // Asignar el evento click al botón "New Quote"
-  $("#new-quote-button").on("click", function () {
+  $("#new-quote").on("click", function () {
     var newRandomColor = randomColor();
     applyRandomColor(newRandomColor);
   });
